@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this analysis repository and the associated manuscript when its citation is finalized."
+type: software
+title: "lobaria-kilimanjaro: analysis of a shared bacterial core and partner-specific functional variation in Lobaria pulmonaria"
+authors:
+  - family-names: "Bogale"
+    given-names: "Anteneh Tamirat"
+version: "0.1.0"
+date-released: "2026-11-14"
+abstract: "R analysis and figure workflow for 16S amplicon and metaproteomic profiles from seven sampled Lobaria pulmonaria populations."
+keywords:
+  - lichen
+  - Lobaria pulmonaria
+  - microbiome
+  - metaproteomics
+  - Kilimanjaro
+repository-code: "https://github.com/AntenehTamiratBogale/lobaria-kilimanjaro"

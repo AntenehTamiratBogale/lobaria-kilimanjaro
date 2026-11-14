@@ -1,0 +1,32 @@
+# R session and IDE state
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+# Generated analyses and figures
+R_results/
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.pdf
+# Large raw acquisitions
+*.raw
+*.RAW
+*.mzML
+*.mzXML
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+# Credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+# OS and Python cache
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

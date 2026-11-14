@@ -1,0 +1,358 @@
+{
+  "source_script_library_version": 8,
+  "script_change": "Allow run mode to be selected via options(lobaria.run_mode=...). Analysis and plotting algorithms retained.",
+  "input_source": "Previously supplied processed CSVs in the reanalysis workflow archive.",
+  "reference_results": "Native R tables previously returned and numerically checked; they are not new outputs from this repository preparation.",
+  "checksums": [
+    {
+      "path": "Lobaria_complete_JPG_only.R",
+      "sha256": "3ec4d4cc0028c7baf1efb7e5f3c8ac73c1d12005d3df00fca3ba508757178de7",
+      "bytes": 87680
+    },
+    {
+      "path": "input/amplicon_16S_asv_TZ_AU.csv",
+      "sha256": "e3fdfb491aa84a101f1635a9339caf09ee612cd47574c8c0522cf6b4c636e06c",
+      "bytes": 291011
+    },
+    {
+      "path": "input/amplicon_16S_tax_TZ_AU.csv",
+      "sha256": "d63812fe170bfffe5fd77942ccb5caf43ba33b2fc59bd38e4bd3780716f1f33e",
+      "bytes": 543234
+    },
+    {
+      "path": "input/meta_data_TZ_AU.csv",
+      "sha256": "8735621baa829488d13074eb992ff58036e4de8d592265931a41883e8d7d3176",
+      "bytes": 7313
+    },
+    {
+      "path": "input/metaproteome_TZ_AU.csv",
+      "sha256": "50258358c21dd83520e3d51ab893cdc66f9a496db8c73cc2d7e258e67d6bb9d7",
+      "bytes": 2547788
+    },
+    {
+      "path": "python_results/Mantel.csv",
+      "sha256": "22e4c62c655632e12f3ce72809f9865dd979c31bb4416e20e725ecd0547927a7",
+      "bytes": 2874
+    },
+    {
+      "path": "python_results/Mantel_secondary.csv",
+      "sha256": "44d1421416c04d816413338b9e54fce089a8d642bad42f75c8cc93e1026a32af",
+      "bytes": 7775
+    },
+    {
+      "path": "python_results/Mantel_within_population_perms_18_1based.csv",
+      "sha256": "465ea696d25de3adafc0ff94966a1ca63e6ca5006eb0b7fda6e40a1f668e6ac0",
+      "bytes": 224955
+    },
+    {
+      "path": "python_results/Mantel_within_population_perms_21_1based.csv",
+      "sha256": "5593a9dd7d2f08af4dbaee4523f23cea6304fe497391a96ed3a14c32a8a7e347",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/NMDS_stress.csv",
+      "sha256": "abe31404cd0f75360bf8e7b4d06446f6a247993ae648d0a8cb7d526cdd00f96a",
+      "bytes": 250
+    },
+    {
+      "path": "python_results/bootstrap_1based.csv",
+      "sha256": "b59585577d83ceebe68eca584b929addd7ed6f34ac1ab2ef5449a4f687b436ae",
+      "bytes": 107946
+    },
+    {
+      "path": "python_results/centroid_each_population.csv",
+      "sha256": "91b9c78897e4ec60a613c5fd5441343de3baafc5312c2be229013f51408b1716",
+      "bytes": 97874
+    },
+    {
+      "path": "python_results/centroid_sensitivities.csv",
+      "sha256": "beb0b26644cb4af58f01d87bd25845b305f2f290693190da5a561a1709b14834",
+      "bytes": 3597
+    },
+    {
+      "path": "python_results/centroid_summary.csv",
+      "sha256": "8f76c008bc14cd7b8773e2883f2e4861b3b5637820af4f59af5198dafbe3bdc6",
+      "bytes": 13012
+    },
+    {
+      "path": "python_results/core_ASVs.csv",
+      "sha256": "e9c9b441c6bf223ce3c61af7ef469ba65db87e59f85b053bd6685d5fdfa871c7",
+      "bytes": 16650
+    },
+    {
+      "path": "python_results/core_rarefaction.csv",
+      "sha256": "5922c488062b7443d077eaa8e17f0a08883c2c441c9d9f14cbe1a49e23c564f2",
+      "bytes": 3536
+    },
+    {
+      "path": "python_results/core_summary.csv",
+      "sha256": "97c78226d9ff91d06127e2a697dcae3246a64a605ad2d95dee61c325140cbdb3",
+      "bytes": 186
+    },
+    {
+      "path": "python_results/core_thresholds.csv",
+      "sha256": "db76b774a64724253f530d5423c75220a7549244ad34d241d9711a3deaa14294",
+      "bytes": 828
+    },
+    {
+      "path": "python_results/family_permutations__Acetobacteraceae__og.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Acetobacteraceae__subRole.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Burkholderiaceae__og.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Burkholderiaceae__subRole.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Caulobacteraceae__og.csv",
+      "sha256": "b9cce8b3add8458f12da124856fe59ac131dc7d8b6e2f1739265563179c87574",
+      "bytes": 224955
+    },
+    {
+      "path": "python_results/family_permutations__Caulobacteraceae__subRole.csv",
+      "sha256": "c788f52acef154f0dcf46ffed026cdf2279e3a952b46ca02dd358364059c7fbd",
+      "bytes": 224955
+    },
+    {
+      "path": "python_results/family_permutations__Frankiaceae__og.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Frankiaceae__subRole.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Isosphaeraceae__og.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Isosphaeraceae__subRole.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Polyangiaceae__og.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Polyangiaceae__subRole.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/family_permutations__Sphingomonadaceae__og.csv",
+      "sha256": "3f3cbb1d39ea5dd86a5eda0649bab9888e5b41e3734a43aaaeacdc4cdf64e2c7",
+      "bytes": 254949
+    },
+    {
+      "path": "python_results/family_permutations__Sphingomonadaceae__subRole.csv",
+      "sha256": "dcf08f00c089dfa3800f310d51630d585501e41e29a81a23773bbf8ffe6a4ac0",
+      "bytes": 254949
+    },
+    {
+      "path": "python_results/input_SHA256.json",
+      "sha256": "b116cf6aad9fecb90f5a0287d7e48283d73bd56ed576c268376d4acf6e3e1017",
+      "bytes": 391
+    },
+    {
+      "path": "python_results/partner_function_rankings.csv",
+      "sha256": "227017bd5c10c867f548be472cc26d22cbff71890f536ac71e017b3d8dcad2b8",
+      "bytes": 637789
+    },
+    {
+      "path": "python_results/partner_functions_by_population.csv",
+      "sha256": "e0c3f2f3aa375e5e2c865d4df9f38a8e757abbd0a7ac638753e5d44ef904dda3",
+      "bytes": 2259229
+    },
+    {
+      "path": "python_results/partner_whole_metaproteome_shares.csv",
+      "sha256": "948830bcf7d9db3c566151034f9201e7ed6980cc4031498ff16976eb1ebf2d8a",
+      "bytes": 3669
+    },
+    {
+      "path": "python_results/permutations18_1based.csv",
+      "sha256": "526969f98232488e3410861d237a49a116a909e4db5c5c9c59547368d26799d2",
+      "bytes": 224955
+    },
+    {
+      "path": "python_results/permutations_1based.csv",
+      "sha256": "f80ddb2fb82bdaef29618e5aa7406e64d7e0a465f6b8b0f9cd954950d3890f3d",
+      "bytes": 269946
+    },
+    {
+      "path": "python_results/population_PERMANOVA.csv",
+      "sha256": "64c456f25b8bbef3dcf001c8af9915f0f91792998a3182317d79a13eeedcb980",
+      "bytes": 4549
+    },
+    {
+      "path": "python_results/previous_deterministic_comparison.csv",
+      "sha256": "705e0e313e255b8eea58ea3920f2308443b8335b006abe3ea5b570179e707ceb",
+      "bytes": 2435
+    },
+    {
+      "path": "python_results/protein_OLS_validation_only.csv",
+      "sha256": "6bd044785c6c54086ad15d1d87895c347cc1f0df06cabf150aa9aa09c3639eba",
+      "bytes": 11062129
+    },
+    {
+      "path": "python_results/pydeseq2_versions.json",
+      "sha256": "4ca086cb89f6bafb3ef54c92b7011eab86f2beab53b1d1460a3f2c3b541ee08c",
+      "bytes": 114
+    },
+    {
+      "path": "python_results/resolution_paired_bootstrap.csv",
+      "sha256": "1800338ac8d713b3140eafa3736d2ebe25c550e3f4af9c4c641fd3d63e9c177c",
+      "bytes": 1248
+    },
+    {
+      "path": "python_results/sample_QC.csv",
+      "sha256": "68695ee54210d7eb8c1aa8b80c44301a8f0250be216ae73e8473715d9c5cce45",
+      "bytes": 7905
+    },
+    {
+      "path": "python_results/shared_family_contributions.csv",
+      "sha256": "0ca776dcdcbe3e588d89f3dc31e0a4054830f2e770b0abf7a02c6158a7478e33",
+      "bytes": 24751
+    },
+    {
+      "path": "python_results/shared_family_detected_log_coefficients.csv",
+      "sha256": "0f1a153082dec82ed9c29773a44c825e03d4cbde1a4bc88218eb2d6945f0c14d",
+      "bytes": 9728
+    },
+    {
+      "path": "python_results/shared_family_functions_by_population.csv",
+      "sha256": "6634843f6f6f4adbf365f61f71d6491efdeee937a0b3596a2bd030f815fa35dd",
+      "bytes": 105721
+    },
+    {
+      "path": "python_results/shared_family_profile_tests.csv",
+      "sha256": "a0f56bb88677ec0edf822f8a774107c60b3af704d76d37647931e7a49cd861e5",
+      "bytes": 25593
+    },
+    {
+      "path": "python_results/validation_report.json",
+      "sha256": "3dbb7e7d3e267fa19bfb04eb4f1d67ad73c066397cf4cf23f1fe0bbd59657cc8",
+      "bytes": 686
+    },
+    {
+      "path": "python_results/versions.json",
+      "sha256": "0f3a12d95eae10d448f1d66524a430a84da96267b343f55cb8f1dd1c0a2ebb0c",
+      "bytes": 140
+    },
+    {
+      "path": "python_results/within_Kilimanjaro_PERMANOVA.csv",
+      "sha256": "eb6989730f267771e154d306fbc3e4eab8c8e4dbddf3d36725715e424c93f602",
+      "bytes": 1469
+    },
+    {
+      "path": "reference_results/R_verification_checks.csv",
+      "sha256": "dd5b88010927c75db2cf6fd4d260b708a731dc79b09031a9dbc029a81125d1f0",
+      "bytes": 1011
+    },
+    {
+      "path": "reference_results/native_R/Mantel.csv",
+      "sha256": "ded01174124f4f967d4179d2e70c4ea2225fd6670ad9db99ace5c8987c9ef4d0",
+      "bytes": 3089
+    },
+    {
+      "path": "reference_results/native_R/Mantel_secondary.csv",
+      "sha256": "3db960101d4125c42ec4ddc52bb1b6b6e55b8cf43d172d838f1a0567e0c8b58c",
+      "bytes": 8321
+    },
+    {
+      "path": "reference_results/native_R/Python_R_checks.csv",
+      "sha256": "e5f2d691bbbe1c235168e35af00cea3746aee10a5ceed13558aa149967e35eaa",
+      "bytes": 1452
+    },
+    {
+      "path": "reference_results/native_R/Python_R_limma_coefficient_check.csv",
+      "sha256": "bbb847a366492c2ae504d88bf6868d73d12adb15a4a5f3985c1841c70189d02c",
+      "bytes": 81
+    },
+    {
+      "path": "reference_results/native_R/centroid_each_population.csv",
+      "sha256": "df0c8fffcc7524a97cdb40dfd6406f362a0d17dda2008c8e7404349817813f8c",
+      "bytes": 60044
+    },
+    {
+      "path": "reference_results/native_R/centroid_sensitivities.csv",
+      "sha256": "a210292c2baa0dc8bfbf13c6fe8758697583eca9038b2493aee1759e4fc20b71",
+      "bytes": 3685
+    },
+    {
+      "path": "reference_results/native_R/centroid_summary.csv",
+      "sha256": "0149ac8d9fe97289ed09ab9b86d758042d088fe5083d653f4c81413a828f3817",
+      "bytes": 12816
+    },
+    {
+      "path": "reference_results/native_R/core_ASVs.csv",
+      "sha256": "f3730ef62206159ea266099597abc8f7cc932d67e83066088bbc57e6713b1233",
+      "bytes": 18085
+    },
+    {
+      "path": "reference_results/native_R/core_rarefaction.csv",
+      "sha256": "5e8b7471fa79c9155f3f151d600503215eb8a058299f707ded090bd38b1a624e",
+      "bytes": 3747
+    },
+    {
+      "path": "reference_results/native_R/core_summary.csv",
+      "sha256": "1add59b6ed355dbb5a3a453c31054ba0896d1c82e3fed2065fbb478ce1283ab5",
+      "bytes": 201
+    },
+    {
+      "path": "reference_results/native_R/core_thresholds.csv",
+      "sha256": "a1f66203f4312d666e11a1dfdb72464458e2b590bb1ec59595a970e3d0ba051c",
+      "bytes": 931
+    },
+    {
+      "path": "reference_results/native_R/partner_function_rankings.csv",
+      "sha256": "f3602bd08ced36b47d7480171dfd78af90f998c611c1176819129e03a1eaf08e",
+      "bytes": 637431
+    },
+    {
+      "path": "reference_results/native_R/partner_whole_metaproteome_shares.csv",
+      "sha256": "6a85b83a6553dba64b6d233a64b89d2b547a5fff4d2f69cb55101ed15798af9d",
+      "bytes": 3686
+    },
+    {
+      "path": "reference_results/native_R/population_PERMANOVA.csv",
+      "sha256": "9c1b8e8272e72c494866e63f8cdeb5bad50903947533f171dad5210c4ebe0b0a",
+      "bytes": 4323
+    },
+    {
+      "path": "reference_results/native_R/shared_family_contribution_limma.csv",
+      "sha256": "e362a905712841cc7926832392b22143e0bc626afc8ff09270f4e213974349f1",
+      "bytes": 16596
+    },
+    {
+      "path": "reference_results/native_R/shared_family_contributions.csv",
+      "sha256": "092120c9a8124d2838e5a76c07ea6fc4e0954ee72121f279225073b384de2b5a",
+      "bytes": 25173
+    },
+    {
+      "path": "reference_results/native_R/shared_family_profile_tests.csv",
+      "sha256": "6e9f5e5062cc012fbeed79281ce980f64e5794b3080192736c6c0d0bab48d349",
+      "bytes": 2468
+    },
+    {
+      "path": "reference_results/native_R/within_Kilimanjaro_PERMANOVA.csv",
+      "sha256": "4b713a00c2764ef397c37b8bdc3c9fbd0d3f0a34f284668fd44983f5c50846b0",
+      "bytes": 1384
+    }
+  ]
+}

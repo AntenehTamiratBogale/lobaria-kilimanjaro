@@ -1,0 +1,11 @@
+check,passed,details
+All supplied Python/R numerical comparisons,True,21 checks; largest error 1.73e-14
+limma coefficients versus independent Python log means,True,77234 contrasts; largest error 1.3e-12
+functional_pairwise_limma.csv BH correction,True,77234 feature/contrast rows; max BH error 1.79e-14
+functional_pairwise_limma.csv protein detection eligibility,True,>=2 detections per compared population
+functional_pairwise_limma_completecase.csv BH correction,True,49542 feature/contrast rows; max BH error 1.74e-14
+protein_taxonomy_pairwise_limma.csv BH correction,True,18623 feature/contrast rows; max BH error 9.99e-15
+protein_taxonomy_pairwise_limma.csv protein detection eligibility,True,>=2 detections per compared population
+protein_taxonomy_pairwise_completecase.csv BH correction,True,15898 feature/contrast rows; max BH error 1.2e-14
+taxonomy_pairwise_DESeq2.csv BH correction,True,10563 feature/contrast rows; max BH error 6.8e-15
+R run completion marker,True,Successful completion; no ERROR.txt

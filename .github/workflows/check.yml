@@ -1,0 +1,16 @@
+name: Check R source and processed inputs
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4'
+      - name: Parse R source without executing models
+        run: Rscript -e 'f <- c("Lobaria_complete_JPG_only.R", list.files("scripts", pattern="[.]R$", full.names=TRUE)); invisible(lapply(f, parse))'
+      - name: Validate processed inputs
+        run: Rscript scripts/check_inputs.R

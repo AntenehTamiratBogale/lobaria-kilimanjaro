@@ -1,0 +1,19 @@
+{
+  "clean_ASVs_4636": true,
+  "core_118": true,
+  "Styria_any_109": true,
+  "Styria_all3_92": true,
+  "33_previous_profiles_rebuilt": true,
+  "previous_centroid_distances_match": true,
+  "all_primary_profile_denominators_valid": true,
+  "functional_OG_all_six_ordering": true,
+  "16S_family_not_all_five": true,
+  "14_eligible_family_resolution_tests": true,
+  "family_multiple_correction_valid": true,
+  "four_partner_rankings_both_levels": true,
+  "partner_unknowns_kept_in_denominator": true,
+  "all_21_taxonomy_pairs_each_level": true,
+  "nonconverged_taxonomy_not_tested": true,
+  "protein_coefficients_have_eligible_detections": true,
+  "protein_OLS_explicitly_not_limma": true
+}
